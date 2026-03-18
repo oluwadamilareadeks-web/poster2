@@ -3,6 +3,7 @@ import Products from "./inventory_components/Products";
 import {useContext, useState} from "react";
 import { AppNameContext } from "./context/AppNameContext";
 import {ProductContext} from "./context/ProductContext"
+import {} from "./inventory_components/Footer"
  const Inventory =()=>{
     // how to use context
     const {appname} = useContext(AppNameContext);// which content do you want to use
