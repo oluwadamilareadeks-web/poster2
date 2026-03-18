@@ -1,7 +1,7 @@
 on: 
-  push:
+    push :
         branches : [main]
-name: Deploy invento app to user server infinityfree
+name: Deploy posta app  to user server infinityfree
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -24,8 +24,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
         server: ftpupload.net
-        username: if0_41420919
-        password: ${{secrets.FTP_PASSWORD}}
-        server-dir: ./htdocs/
-        local-dir: ./dist/
+        username: if0_41420836
+        password: ${{ secrets.FTP_PASSWORD}}
+        server-dir : ./htdocs/
+        local-dir : ./dist/
         dangerous-clean-slate : true
